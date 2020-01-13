@@ -15,7 +15,7 @@ const load = ({ appId }) => new Promise((resolve) => {
   const firstJS = document.getElementsByTagName('script')[0]
   const js = document.createElement('script')
 
-  js.src = '//platform.linkedin.com/in.js?async=true'
+  js.src = 'https://platform.linkedin.com/in.js?async=true'
   js.id = 'linkedin-client'
 
   js.onload = () => {
@@ -125,7 +125,7 @@ const oldLoad = (appId) => {
   js = document.createElement('script')
 
   js.id = id
-  js.src = '//platform.linkedin.com/in.js?async=true'
+  js.src = 'https://platform.linkedin.com/in.js?async=true'
 
   js.onload = () => {
     window.IN.init({

@@ -36,7 +36,7 @@ const load = ({ appId, scope }) => new Promise((resolve) => {
   const firstJS = document.getElementsByTagName('script')[0]
   const js = document.createElement('script')
 
-  js.src = '//connect.facebook.net/en_US/sdk.js'
+  js.src = 'https://connect.facebook.net/en_US/sdk.js'
   js.id = 'facebook-jssdk'
 
   window.fbAsyncInit = () => {
@@ -160,7 +160,7 @@ const oldLoad = (appId) => {
   js = document.createElement('script')
 
   js.id = id
-  js.src = '//connect.facebook.net/en_US/all.js'
+  js.src = 'https://connect.facebook.net/en_US/all.js'
 
   js.onLoad = () => {
     window.fbAsyncInit = function () {
